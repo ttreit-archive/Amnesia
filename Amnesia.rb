@@ -29,7 +29,7 @@ def intro
 	hline_bottom
 	puts
 	### Send arguments to generic decision
-	generic_decision(4)
+	generic_decision(4, "text array")
 end
 
 =begin
@@ -55,12 +55,16 @@ end
 ### UNSTABLE CODE
 ### Make decision more extensible
 
-def generic_decision(arg_possible)
+def generic_decision(arg_decisions, arg_text_array)
 	### Replace intro_decision - 
-	### How many possibilities?
-	possible = arg_possible
-	puts "There are #{possible} decisions."
-	
+	### How many decisions?
+	decisions = arg_decisions
+	puts "There are #{decisions} decisions."
+	### Text for each decision
+	### Use an array? or...?
+	myarray = arg_text_array
+	puts "myarray = #{myarray}"
+	### Tell function what to do for each decision
 	
 end
 
