@@ -2,7 +2,7 @@
 
 ### Functions for each section
 
-def prompt
+def d_prompt
 	print "* "
 end
 
@@ -14,6 +14,10 @@ def hline_bottom
 	puts "---------------------------------------------------------"
 end
 
+def ph
+	puts "PLACEHOLDER"
+end
+
 def intro
 	puts "As you gain consciousness you blink and look around."
 	puts "You are lying on the rough surface of a dock."
@@ -21,6 +25,22 @@ def intro
 	puts "and your eyes adjust to the bright light."
 	puts
 	puts "You realize that you are naked."
+end
+
+def intro_decision
+	puts "1. Jump into the water."
+	puts "2. Stand up and stretch."
+	d_prompt
+	d_intro = gets.chomp
+	if d_intro == "1"
+		puts ph
+	elsif d_intro == "2"
+		puts ph
+		puts ph
+	end
+	
+	# d_input(d_intro)
+	puts
 end
 
 ### Main Body
@@ -32,3 +52,5 @@ intro
 hline_bottom
 
 puts
+
+intro_decision
