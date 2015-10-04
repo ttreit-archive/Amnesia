@@ -37,6 +37,9 @@ def intro_decision
 	elsif d_intro == "2"
 		puts ph
 		puts ph
+	else 
+		puts "Please choose one of the options above."
+		puts "I would loop here but I haven't gotten to loops yet."
 	end
 	
 	# d_input(d_intro)
