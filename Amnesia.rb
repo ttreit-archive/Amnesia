@@ -65,8 +65,8 @@ def generic_decision(arg_decisions)
 	### Text for each decision
 	### Use an array? or...?
 	
-	puts arg_decisions[0]
-	puts arg_decisions[1]
+	puts arg_decisions
+	
 	
 	#myarray = arg_text_array
 	#puts "myarray = #{myarray}"
