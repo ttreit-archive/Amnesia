@@ -15,9 +15,9 @@ def NAME
 	
 	choice = decision_list(NAME_choices)
 	if choice == "1"
-		CALL FUNCTION 1
+		ph
 	elsif choice == "2"
-		CALL FUNCTION 2
+		ph
 	else
 		error_invalid_choice
 	end
