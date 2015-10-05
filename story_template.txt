@@ -1,5 +1,6 @@
 Story Piece template
 
+### Write the Story piece here
 def NAME
 	hline_top
 	puts
@@ -10,15 +11,23 @@ def NAME
 	"""
 	hline_bottom
 	puts
+	NAME_choose
+end	
 	
+### Write the choices here
+
+def NAME_choose	
 	NAME_choices = ["1. CHOICE 1", "2. CHOICE2, ETC "]
-	
 	choice = decision_list(NAME_choices)
 	if choice == "1"
 		ph
 	elsif choice == "2"
 		ph
 	else
-		error_invalid_choice
+		error_message
+		error_invalid_choice(NAME_choose)
 	end
-end ### End of NAME function
+end
+
+
+
