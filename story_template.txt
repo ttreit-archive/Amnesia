@@ -1,0 +1,17 @@
+Story Piece template
+
+def NAME
+	hline_top
+	STORY TEXT
+	hline_bottom
+	puts
+	NAME_choices = ["1. Jump into the water.", "2. Stand up and stretch."]
+	choice = decision_list(NAME_choices)
+	if choice == "1"
+		CALL FUNCTION 1
+	elsif choice == "2"
+		CALL FUNCTION 2
+	else
+		ERROR HANDLING
+	end
+end ### End of NAME function

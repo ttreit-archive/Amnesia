@@ -2,7 +2,7 @@
 
 ### Functions for each section
 
-def d_prompt
+def prompt
 	print "* "
 end
 
@@ -31,8 +31,15 @@ def intro
 	### Send arguments to generic decision
 	#generic_decision(4, "text array")
 	intro_choices = ["1. Jump into the water.", "2. Stand up and stretch."]
-	generic_decision(intro_choices)
-end
+	choice = decision_list(intro_choices)
+	if choice == "1"
+		puts "test1"
+	elsif choice == "2"
+		puts "test2"
+	else
+		puts "or..."
+	end
+end ### End of intro function
 
 =begin
 def intro_decision
@@ -57,15 +64,15 @@ end
 ### UNSTABLE CODE
 ### Make decision more extensible
 
-def generic_decision(arg_decisions)
-	### Replace intro_decision - 
-	### How many decisions?
-	#decisions = arg_decisions
-	#puts "There are #{decisions} decisions."
-	### Text for each decision
-	### Use an array? or...?
+def decision_list(arg_decisions)
 	
 	puts arg_decisions
+	puts
+	puts "Choose Wisely"
+	prompt
+	response = gets.chomp
+return response
+	
 	
 	
 	#myarray = arg_text_array
